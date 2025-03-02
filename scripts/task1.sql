@@ -1,30 +1,16 @@
+CREATE SCHEMA task;
 
-CREATE SCHEMA my_schema;
-
-
-CREATE TABLE my_schema.PERSONS (
-    "name" VARCHAR(50),
-    surname VARCHAR(50),
+CREATE TABLE task.CUSTOMERS (
+    id SERIAL PRIMARY KEY,
+    "name" VARCHAR(100),
+    surname VARCHAR(100),
     age INT,
-    phone_number VARCHAR(20),
-    city_of_living VARCHAR(100),
-    PRIMARY KEY (name, surname, age),
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+    phone_number VARCHAR(15)
 );
 
-
-
-
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Dmitry', 'Dmitriev', 30, '+7(999)101-01-01', 'MOSCOW');
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Maria', 'Marinova', 25, '+7(999)202-02-02', 'Saint Petersburg');
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Alexandra', 'Alexandrovna', 28, '+7(999)303-03-03', 'MOSCOW');
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Sergey', 'Sergeev', 35, '+7(999)404-04-04', 'Yekaterinburg');
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Olga', 'Olgovna', 32, '+7(999)505-05-05', 'Kazan');
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Andrey', 'Andreev', 26, '+7(999)606-06-06', 'Nizhny Novgorod');
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Ekaterina', 'Ekaterinova', 29, '+7(999)707-07-07', 'MOSCOW');
-INSERT INTO my_schema.PERSONS (name, surname, age, phone_number, city_of_living) VALUES ('Nikolay', 'Nikolaev', 24, '+7(999)808-08-08', 'Samara');
-
-
-
-
+INSERT INTO task.CUSTOMERS (name, surname, age, phone_number) VALUES ('Алексей', 'Иванов', 30, '+79991234567');
+INSERT INTO task.CUSTOMERS (name, surname, age, phone_number) VALUES ('Мария', 'Петрова', 25, '+79997654321');
+INSERT INTO task.CUSTOMERS (name, surname, age, phone_number) VALUES ('Дмитрий', 'Сидоров', 40, '+79001234567');
+INSERT INTO task.CUSTOMERS (name, surname, age, phone_number) VALUES ('Елена', 'Кузнецова', 35, '+79151234567');
+INSERT INTO task.CUSTOMERS (name, surname, age, phone_number) VALUES ('Анастасия', 'Смирнова', 28, '+79876543210');
 

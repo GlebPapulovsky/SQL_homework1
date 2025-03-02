@@ -33,7 +33,7 @@
     <retain-sticky-names value="false" />
   </component>
   <component name="DBNavigator.Project.FileConnectionMappingManager">
-    <mapping file-url="file://$PROJECT_DIR$/scripts/task3.sql" connection-id="d43b0d8f-e819-4b7a-b419-4b49ea05c435" session-id="MAIN" current-schema="my_schema" />
+    <mapping file-url="file://$PROJECT_DIR$/scripts/task3.sql" connection-id="d43b0d8f-e819-4b7a-b419-4b49ea05c435" session-id="MAIN" current-schema="task" />
     <mapping file-url="file://$PROJECT_DIR$/scripts/task2.sql" connection-id="d43b0d8f-e819-4b7a-b419-4b49ea05c435" session-id="MAIN" current-schema="my_schema" />
     <mapping file-url="file://$PROJECT_DIR$/scripts/task1.sql" connection-id="d43b0d8f-e819-4b7a-b419-4b49ea05c435" session-id="MAIN" current-schema="my_schema" />
   </component>
